@@ -59,6 +59,7 @@ class _ProjectCardState extends State<ProjectCard> {
         height: widget.cardHeight,
         padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 12.0),
         decoration: BoxDecoration(
+          // borderRadius: BorderRadius.circular(20),
           color: _themeProvider.lightTheme ? Colors.white : Colors.grey[900],
           border: Border(
             bottom: isHover
@@ -98,13 +99,17 @@ class _ProjectCardState extends State<ProjectCard> {
                         ? Image.asset(
                             widget.projectIcon!,
                             height: height * 0.05,
+                            
                           )
                         : Row(
                             mainAxisSize: MainAxisSize.min,
                             children: [
                               Image.asset(
+
                                 widget.projectIcon!,
                                 height: height * 0.03,
+                                                              
+
                               ),
                               SizedBox(
                                 width: width * 0.01,

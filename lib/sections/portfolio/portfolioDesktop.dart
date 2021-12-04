@@ -16,25 +16,26 @@ class PortfolioDesktop extends StatelessWidget {
           horizontal: width * 0.02, vertical: height * 0.02),
       child: Column(
         children: [
-          CustomSectionHeading(text: "\nPortfolio"),
+          CustomSectionHeading(text: "\nRecent Project"),
           CustomSectionSubHeading(
               text: "Here are few samples of my previous work :)\n\n"),
           SizedBox(
-            height: width > 1200 ? height * 0.45 : width * 0.21,
+            //  width: 1110,
+            height: 246,
             child: ListView.separated(
-              padding: EdgeInsets.symmetric(vertical: 20.0),
+              padding: EdgeInsets.symmetric(horizontal: 20.0),
               scrollDirection: Axis.horizontal,
               separatorBuilder: (context, index) {
                 return VerticalDivider(
                   color: Colors.transparent,
-                  width: width * 0.015,
+                  width: width * 0.01,
                 );
               },
               itemBuilder: (context, index) {
                 return WidgetAnimator(
                   child: ProjectCard(
-                    cardWidth: width < 1200 ? width * 0.3 : width * 0.35,
-                    cardHeight: width < 1200 ? height * 0.32 : height * 0.1,
+                    cardWidth: 435,
+                    // cardHeight: 150,
                     backImage: kProjectsBanner[index],
                     projectIcon: kProjectsIcons[index],
                     projectTitle: kProjectsTitles[index],
@@ -52,7 +53,7 @@ class PortfolioDesktop extends StatelessWidget {
           OutlinedCustomBtn(
               btnText: "See More",
               onPressed: () {
-                launchURL("https://github.com/mhmzdev");
+                launchURL("https://github.com/Edwin10151");
               })
         ],
       ),

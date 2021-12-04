@@ -23,7 +23,8 @@ class HomeTab extends StatelessWidget {
             right: width < 740 ? -width * 0.2 : -width * 0.1,
             child: Opacity(
               opacity: 0.9,
-              child: Image.asset('assets/1.png', height: height * 0.75),
+              child: Image.asset('assets/new_pic/mainpic.png',
+                  height: height * 0.75),
             ),
           ),
           Container(
@@ -55,7 +56,7 @@ class HomeTab extends StatelessWidget {
                   height: height * 0.04,
                 ),
                 Text(
-                  "Muhammad",
+                  "Edwin",
                   style: GoogleFonts.montserrat(
                       fontSize: height * 0.07,
                       fontWeight: FontWeight.w100,
@@ -65,10 +66,10 @@ class HomeTab extends StatelessWidget {
                       letterSpacing: 1.5),
                 ),
                 Text(
-                  "Hamza",
+                  "Ting",
                   style: GoogleFonts.montserrat(
                     fontSize: height * 0.07,
-                    fontWeight: FontWeight.w500,
+                    fontWeight: FontWeight.w300,
                     color:
                         _themeProvider.lightTheme ? Colors.black : Colors.white,
                   ),
@@ -90,9 +91,9 @@ class HomeTab extends StatelessWidget {
                               : Colors.white,
                         ),
                         text: [
-                          " Flutter Developer",
-                          " Technical Writer",
-                          " UI/UX Enthusiast"
+                          " Software Development",
+                          " Marching Learning",
+                          " Tech Enthusiast"
                         ]),
                   ],
                 ),

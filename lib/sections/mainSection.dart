@@ -13,7 +13,7 @@ import 'package:folio/sections/contact/contact.dart';
 import 'package:folio/sections/home/home.dart';
 import 'package:folio/sections/navBar/navBarLogo.dart';
 import 'package:folio/sections/portfolio/portfolio.dart';
-import 'package:folio/sections/services/services.dart';
+// import 'package:folio/sections/services/services.dart';
 import 'package:folio/widget/arrowOnTop.dart';
 import 'package:folio/widget/footer.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -32,7 +32,7 @@ class _MainPageState extends State<MainPage> {
   final List<String> _sectionsName = [
     "HOME",
     "ABOUT",
-    "SERVICES",
+    // "SERVICES",
     "PROJECTS",
     "CONTACT"
   ];
@@ -68,12 +68,10 @@ class _MainPageState extends State<MainPage> {
     } else if (i == 1) {
       return About();
     } else if (i == 2) {
-      return Services();
-    } else if (i == 3) {
       return Portfolio();
-    } else if (i == 4) {
+    } else if (i == 3) {
       return Contact();
-    } else if (i == 5) {
+    } else if (i == 4) {
       return Footer();
     } else {
       return Container();
@@ -225,34 +223,34 @@ class _MainPageState extends State<MainPage> {
       actions: [
         for (int i = 0; i < _sectionsName.length; i++)
           _appBarActions(_sectionsName[i], i, _sectionsIcons[i], _themeProv),
-        EntranceFader(
-          offset: Offset(0, -10),
-          delay: Duration(milliseconds: 100),
-          duration: Duration(milliseconds: 250),
-          child: Container(
-            height: 60.0,
-            width: 120.0,
-            padding: const EdgeInsets.all(8.0),
-            child: MaterialButton(
-              hoverColor: kPrimaryColor.withAlpha(150),
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(5.0),
-                  side: BorderSide(color: kPrimaryColor)),
-              onPressed: () {
-                html.window.open(
-                    'https://drive.google.com/file/d/1GF-wtbu2ob_Uxhw2In2QA8QiYi3XjCj1/view?usp=sharing',
-                    "pdf");
-              },
-              child: Text(
-                "RESUME",
-                style: GoogleFonts.montserrat(
-                  color: _themeProv.lightTheme ? Colors.black : Colors.white,
-                  fontWeight: FontWeight.w300,
-                ),
-              ),
-            ),
-          ),
-        ),
+        // EntranceFader(
+        //   offset: Offset(0, -10),
+        //   delay: Duration(milliseconds: 100),
+        //   duration: Duration(milliseconds: 250),
+        //   child: Container(
+        //     height: 60.0,
+        //     width: 120.0,
+        //     padding: const EdgeInsets.all(8.0),
+        //     child: MaterialButton(
+        //       hoverColor: kPrimaryColor.withAlpha(150),
+        //       shape: RoundedRectangleBorder(
+        //           borderRadius: BorderRadius.circular(5.0),
+        //           side: BorderSide(color: kPrimaryColor)),
+        //       onPressed: () {
+        //         html.window.open(
+        //             'https://drive.google.com/file/d/1GF-wtbu2ob_Uxhw2In2QA8QiYi3XjCj1/view?usp=sharing',
+        //             "pdf");
+        //       },
+        //       child: Text(
+        //         "RESUME",
+        //         style: GoogleFonts.montserrat(
+        //           color: _themeProv.lightTheme ? Colors.black : Colors.white,
+        //           fontWeight: FontWeight.w300,
+        //         ),
+        //       ),
+        //     ),
+        //   ),
+        // ),
         const SizedBox(width: 15.0),
         SizedBox(
           height: 30.0,
@@ -368,15 +366,3 @@ class SectionsBody extends StatelessWidget {
     );
   }
 }
-
-// onPointerSignal: (ps) {
-//           if (ps is PointerScrollEvent) {
-//             final newOffset = scrollController.offset + ps.scrollDelta.dy;
-//             if (ps.scrollDelta.dy.isNegative) {
-//               scrollController.jumpTo(math.max(0, newOffset));
-//             } else {
-//               scrollController.jumpTo(math.min(
-//                   scrollController.position.maxScrollExtent, newOffset));
-//             }
-//           }
-//         },

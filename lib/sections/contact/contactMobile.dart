@@ -20,7 +20,7 @@ class ContactMobileTab extends StatelessWidget {
           CustomSectionSubHeading(
               text: "Let's build something together :)\n\n"),
           CarouselSlider.builder(
-            itemCount: 3,
+            itemCount: 2,
             itemBuilder: (BuildContext context, int itemIndex, int i) =>
                 Padding(
               padding: const EdgeInsets.symmetric(vertical: 10.0),
@@ -34,7 +34,7 @@ class ContactMobileTab extends StatelessWidget {
             options: CarouselOptions(
                 height: height * 0.3,
                 autoPlay: true,
-                autoPlayInterval: Duration(seconds: 5),
+                autoPlayInterval: Duration(seconds: 4),
                 enlargeCenterPage: true,
                 autoPlayCurve: Curves.fastOutSlowIn,
                 autoPlayAnimationDuration: Duration(milliseconds: 800),

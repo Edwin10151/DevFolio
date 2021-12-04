@@ -23,7 +23,7 @@ class AboutDesktop extends StatelessWidget {
 
     return Container(
       padding: EdgeInsets.symmetric(
-        horizontal: width * 0.02,
+        horizontal: width * 0.01,
       ),
       color: _themeProvider.lightTheme ? Colors.white : Colors.black,
       child: Column(
@@ -34,15 +34,18 @@ class AboutDesktop extends StatelessWidget {
           Row(
             children: [
               Expanded(
-                child: Image.asset(
-                  'assets/web.png',
-                  height: height * 0.7,
+                child: Container(
+                  child: Image.asset('assets/second_main.png',
+                      height: 600,
+                      width: 550,
+                      // fit: BoxFit.cover),
+                  ),
                 ),
               ),
               Expanded(
-                flex: width < 1230 ? 2 : 1,
+                flex: width < 1200 ? 2 : 1,
                 child: Container(
-                  padding: EdgeInsets.only(left: width < 1230 ? 25.0 : 0),
+                  padding: EdgeInsets.only(left: width < 1200 ? 25.0 : 0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -55,7 +58,7 @@ class AboutDesktop extends StatelessWidget {
                         height: height * 0.03,
                       ),
                       AdaptiveText(
-                        "I'm Muhammad Hamza, a Flutter developer, Technical blog writer and UI designer.",
+                        "I'm Edwin Ting, interested in Software Development and Artificial Intelligence.",
                         style: GoogleFonts.montserrat(
                           fontSize: height * 0.035,
                           fontWeight: FontWeight.w400,
@@ -68,7 +71,7 @@ class AboutDesktop extends StatelessWidget {
                         height: height * 0.02,
                       ),
                       AdaptiveText(
-                        "I'm a Final Year Computer Science student enrolled in COMSATS University, Islamabad. I have been developing mobile apps for over 1.5 years now. I have worked in teams for various startups and helped them in launching their prototypes and got valuable learning experience. I'm an active Google Developer Student Clubs (DSC) lead and also CEO/Founder Flutter Islamabad, Pakistan.",
+                        "Final Year Student in SMK Bintulu.",
                         style: GoogleFonts.montserrat(
                           fontSize: height * 0.02,
                           color: Colors.grey[500],
@@ -81,8 +84,8 @@ class AboutDesktop extends StatelessWidget {
                       Container(
                         decoration: BoxDecoration(
                           border: Border(
-                            bottom:
-                                BorderSide(color: Colors.grey[800]!, width: 2.0),
+                            bottom: BorderSide(
+                                color: Colors.grey[800]!, width: 2.0),
                           ),
                         ),
                       ),
@@ -108,60 +111,47 @@ class AboutDesktop extends StatelessWidget {
                       Container(
                         decoration: BoxDecoration(
                           border: Border(
-                            bottom:
-                                BorderSide(color: Colors.grey[800]!, width: 2.0),
+                            bottom: BorderSide(
+                                color: Colors.grey[800]!, width: 2.0),
                           ),
                         ),
                       ),
                       SizedBox(
                         height: height * 0.025,
                       ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          AboutMeMetaData(
-                            data: "Name",
-                            information: "Muhammad Hamza",
-                          ),
-                          AboutMeMetaData(
-                            data: "Email",
-                            information: "hamza.6.shakeel@gmail.com",
-                          ),
-                        ],
-                      ),
-                      SizedBox(
-                        height: height * 0.02,
-                      ),
-                      Row(
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: OutlinedCustomBtn(
-                              onPressed: () {
-                                html.window.open(
-                                    'https://drive.google.com/file/d/1GF-wtbu2ob_Uxhw2In2QA8QiYi3XjCj1/view?usp=sharing',
-                                    "pdf");
-                              },
-                              btnText: "Resume",
-                            ),
-                          ),
-                          Container(
-                            width: width * 0.05,
-                            decoration: BoxDecoration(
-                              border: Border(
-                                bottom: BorderSide(
-                                    color: Colors.grey[900]!, width: 2.0),
-                              ),
-                            ),
-                          ),
-                          for (int i = 0; i < kCommunityLogo.length; i++)
-                            CommunityIconBtn(
-                              icon: kCommunityLogo[i],
-                              link: kCommunityLinks[i],
-                              height: _communityLogoHeight[i],
-                            ),
-                        ],
-                      ),
+                      // SizedBox(
+                      //   height: height * 0.02,
+                      // ),
+                      // Row(
+                      //   children: [
+                      //     Padding(
+                      //       padding: const EdgeInsets.all(8.0),
+                      //       child: OutlinedCustomBtn(
+                      //         onPressed: () {
+                      //           html.window.open(
+                      //               'https://drive.google.com/file/d/1GF-wtbu2ob_Uxhw2In2QA8QiYi3XjCj1/view?usp=sharing',
+                      //               "pdf");
+                      //         },
+                      //         btnText: "Resume",
+                      //       ),
+                      //     ),
+                      //     Container(
+                      //       width: width * 0.05,
+                      //       decoration: BoxDecoration(
+                      //         border: Border(
+                      //           bottom: BorderSide(
+                      //               color: Colors.grey[900]!, width: 2.0),
+                      //         ),
+                      //       ),
+                      //     ),
+                      //     for (int i = 0; i < kCommunityLogo.length; i++)
+                      //       CommunityIconBtn(
+                      //         icon: kCommunityLogo[i],
+                      //         link: kCommunityLinks[i],
+                      //         height: _communityLogoHeight[i],
+                      //       ),
+                      //   ],
+                      // ),
                     ],
                   ),
                 ),

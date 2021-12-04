@@ -26,10 +26,11 @@ class _HomeMobileState extends State<HomeMobile> {
         children: [
           Positioned(
             bottom: 0.0,
-            right: -width * 0.25,
+            right: -width * 0.2,
             child: Opacity(
               opacity: 0.9,
-              child: Image.asset('assets/1.png', height: height * 0.65),
+              child: Image.asset('assets/new_pic/mainpic.png',
+                  height: height * 0.5),
             ),
           ),
           Container(
@@ -59,7 +60,7 @@ class _HomeMobileState extends State<HomeMobile> {
                   height: height * 0.01,
                 ),
                 Text(
-                  "Muhammad",
+                  "Edwin",
                   style: GoogleFonts.montserrat(
                       fontSize: height * 0.055,
                       color: _themeProvider.lightTheme
@@ -69,13 +70,13 @@ class _HomeMobileState extends State<HomeMobile> {
                       letterSpacing: 1.1),
                 ),
                 Text(
-                  "Hamza",
+                  "Ting",
                   style: GoogleFonts.montserrat(
                       color: _themeProvider.lightTheme
                           ? Colors.black
                           : Colors.white,
                       fontSize: height * 0.055,
-                      fontWeight: FontWeight.w500),
+                      fontWeight: FontWeight.w300),
                 ),
                 Row(
                   children: [
@@ -93,9 +94,9 @@ class _HomeMobileState extends State<HomeMobile> {
                                 : Colors.white,
                             fontWeight: FontWeight.w200),
                         text: [
-                          " Flutter Developer",
-                          " Technical Writer",
-                          " UI/UX Enthusiast"
+                          " Software Development",
+                          " Marching Learning",
+                          " Tech Enthusiast"
                         ]),
                   ],
                 ),

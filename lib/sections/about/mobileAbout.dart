@@ -31,7 +31,7 @@ class AboutMobile extends StatelessWidget {
           CustomSectionHeading(text: "\nAbout Me"),
           CustomSectionSubHeading(text: "Get to know me :)"),
           Image.asset(
-            'assets/mob.png',
+            'assets/second_main.png',
             height: height * 0.27,
           ),
           SizedBox(
@@ -51,7 +51,7 @@ class AboutMobile extends StatelessWidget {
             height: height * 0.028,
           ),
           Text(
-            "I'm Muhammad Hamza, a Flutter developer, Technical blog writer and UI designer.",
+            "I'm Edwin Ting, interested in Software Development and Artificial Intelligence.",
             style: GoogleFonts.montserrat(
               fontSize: height * 0.022,
               fontWeight: FontWeight.w400,
@@ -62,7 +62,7 @@ class AboutMobile extends StatelessWidget {
             height: height * 0.02,
           ),
           Text(
-            "I'm a Final Year Computer Science student enrolled in COMSATS University, Islamabad. I have been developing mobile apps for over 1.5 years now. I have worked in teams for various startups and helped them in launching their prototypes and got valuable learning experience. I'm an active Google Developer Student Clubs (DSC) lead and also CEO/Founder Flutter Islamabad, Pakistan.",
+            "Final Year Student at SMK Bintulu.",
             style: GoogleFonts.montserrat(
               fontSize: height * 0.018,
               color: Colors.grey[500],
@@ -92,7 +92,7 @@ class AboutMobile extends StatelessWidget {
           ),
           Row(
             children: [
-              for (int i = 0; i < 4; i++)
+              for (int i = 0; i < 5; i++)
                 ToolTechWidget(
                   techName: kTools[i],
                 ),
@@ -100,7 +100,7 @@ class AboutMobile extends StatelessWidget {
           ),
           Row(
             children: [
-              for (int i = 4; i < 8; i++)
+              for (int i = 4; i < 5; i++)
                 ToolTechWidget(
                   techName: kTools[i],
                 ),
@@ -119,57 +119,47 @@ class AboutMobile extends StatelessWidget {
           SizedBox(
             height: height * 0.02,
           ),
-          AboutMeMetaData(
-            data: "Name",
-            information: "Muhammad Hamza",
-            alignment: Alignment.centerLeft,
-          ),
-          AboutMeMetaData(
-            data: "Email",
-            information: "hamza.6.shakeel@gmail.com",
-            alignment: Alignment.centerLeft,
-          ),
           SizedBox(
             height: height * 0.015,
           ),
-          Align(
-            alignment: Alignment.centerLeft,
-            child: Row(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: OutlinedCustomBtn(
-                      btnText: "Resume",
-                      onPressed: () {
-                        kIsWeb
-                            ? html.window.open(
-                                'https://drive.google.com/uc?export=view&id=1OOdcdGEN3thVvpZ4cl_MM0LT-GCMuLIE',
-                                "pdf")
-                            : launchURL(
-                                'https://drive.google.com/uc?export=view&id=1OOdcdGEN3thVvpZ4cl_MM0LT-GCMuLIE');
-                      }),
-                ),
-                Container(
-                  width: width * 0.2,
-                  decoration: BoxDecoration(
-                    border: Border(
-                      bottom: BorderSide(color: Colors.grey[900]!, width: 2.0),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
-          Row(
-            children: [
-              for (int i = 0; i < kCommunityLogo.length; i++)
-                CommunityIconBtn(
-                  icon: kCommunityLogo[i],
-                  link: kCommunityLinks[i],
-                  height: _communityLogoHeight[i],
-                ),
-            ],
-          ),
+          // Align(
+          //   alignment: Alignment.centerLeft,
+          //   child: Row(
+          //     children: [
+          //       Padding(
+          //         padding: const EdgeInsets.all(8.0),
+          //         child: OutlinedCustomBtn(
+          //             btnText: "Resume",
+          //             onPressed: () {
+          //               kIsWeb
+          //                   ? html.window.open(
+          //                       'https://drive.google.com/uc?export=view&id=1OOdcdGEN3thVvpZ4cl_MM0LT-GCMuLIE',
+          //                       "pdf")
+          //                   : launchURL(
+          //                       'https://drive.google.com/uc?export=view&id=1OOdcdGEN3thVvpZ4cl_MM0LT-GCMuLIE');
+          //             }),
+          //       ),
+          //       Container(
+          //         width: width * 0.2,
+          //         decoration: BoxDecoration(
+          //           border: Border(
+          //             bottom: BorderSide(color: Colors.grey[900]!, width: 2.0),
+          //           ),
+          //         ),
+          //       ),
+          //     ],
+          //   ),
+          // ),
+          // Row(
+          //   children: [
+          //     for (int i = 0; i < kCommunityLogo.length; i++)
+          //       CommunityIconBtn(
+          //         icon: kCommunityLogo[i],
+          //         link: kCommunityLinks[i],
+          //         height: _communityLogoHeight[i],
+          //       ),
+          //   ],
+          // ),
         ],
       ),
     );

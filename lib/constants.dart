@@ -6,21 +6,13 @@ const Color kPrimaryColor = Color(0xffC0392B);
 
 // Social Media
 const kSocialIcons = [
-  "https://img.icons8.com/metro/208/ffffff/facebook-new--v2.png",
-  "https://img.icons8.com/ios-glyphs/480/ffffff/instagram-new.png",
-  "https://img.icons8.com/android/480/ffffff/twitter.png",
   "https://img.icons8.com/metro/308/ffffff/linkedin.png",
   "https://img.icons8.com/material-rounded/384/ffffff/github.png",
-  "https://img.icons8.com/ios-filled/500/ffffff/medium-monogram--v1.png"
 ];
 
 const kSocialLinks = [
-  "https://facebook.com/mhmzdev",
-  "https://instagram.com/mhmzdev",
-  "https://twitter.com/mhmzdev",
-  "https://linkedin.com/in/mhmzdev",
-  "https://github.com/mhmzdev",
-  "https://mhamzadev.medium.com"
+  "https://www.linkedin.com/in/edwin-ting-07a936215/",
+  "https://github.com/Edwin10151",
 ];
 
 // URL Launcher
@@ -45,11 +37,8 @@ final kTools = [
   "Flutter",
   "Dart",
   "Python",
-  "Java",
   "C++",
-  "HTML",
-  "CSS",
-  "Bootstrap"
+  "Tensorflow"
 ];
 
 // services
@@ -95,55 +84,46 @@ final kServicesLinks = [
 
 // projects
 final kProjectsBanner = [
-  "assets/projects/medkitB.png",
-  "assets/projects/quranB.png",
-  "assets/projects/hereiamB.png",
-  "assets/projects/covidB.png",
+  "assets/projects/Change_Maker.png",
+  "assets/projects/laptop.png",
+  "assets/projects/brain.png",
+  "assets/projects/think.jpg",
 ];
 
 final kProjectsIcons = [
-  "assets/projects/medkit.png",
+  "assets/projects/Intreaction_design.png",
+  "assets/projects/desktop.png",
+  "assets/projects/graphic.png",
+  "assets/projects/android.png",
   "assets/projects/quran.png",
   "assets/projects/hereiam.png",
   "assets/projects/covid.png",
   "assets/projects/messenger.png",
   "assets/projects/flutter.png",
-  "assets/projects/earbender.png",
   "assets/projects/java.png",
-  "assets/projects/android.png",
-  "assets/services/open.png",
+
+
 ];
 
 final kProjectsTitles = [
-  "MedKit",
-  "The Holy Qur'an",
-  "Here I Am",
-  "COVID-19",
-  "Messenger Chat Head UI",
-  "flutter.dev - Flutter Web",
-  "Earbender",
-  "File Transfer Protocol",
-  "My Order",
-  "Hidev",
+  "Shine",
+  "Jaunty Jackals",
+  "Machine Learning",
+  "Still exploring",
+
 ];
 
 final kProjectsDescriptions = [
-  "A Phramacy app developed using Flutter powered with Firebase as database with Doctor and Patient panels.",
-  "Application of Holy book of Muslims, Al-Qur'an. Developed using Flutter. Powered with live RestAPI given in README.md",
-  "Here I am is an Alert app that Sends alert SMS holding your location (Address and Google Maps) to your loved ones.",
-  "A live trakcer for COVID19 stats across the Globe and my Home country Pakistan. It uses APIs so the data is live.",
-  "Tried to clone the famous Chat Heads by Facebook Messenger using Flutter. Its basically in-app not exactly like the original chat head.",
-  "Flutter Official Site clone using Flutter Web. Try the live site here. For the time being its not responsive fully so there might be responsiveness issues.",
-  "A concept of Music App developed using Flutter. Having functionality of playing Audio.",
-  "A simple GUI based Java application that sends file from Client to Server but not the other way around.",
-  "A concept app for self-services at various restaurants now a days. More like a Restaurant Ordering System.",
-  "Its my end semester project. The whole design I developed here is an inspiration from my favortie Flutter Developer Marcin Szałek and his blog Fidev."
+  "SHINE, help homeowners in making better solar panel purchasing decisions and encourage more people to utilize solar energy to save our planet Earth",
+  "Game using simple Text User Interfaces(TUIs) with Python libraries. Event organised by Python Official Discord",
+  "Here's some basic & simple model that I created using Tensorflow.",
+  "Still Exploring.......",
 ];
 
 final kProjectsLinks = [
-  "https://github.com/mhmzdev/MedKit-Pharmacy-App-Using-Flutter",
-  "https://github.com/mhmzdev/The_Holy_Quran_App",
-  "https://github.com/mhmzdev/Here-I-Am-Alert-App",
+  "https://github.com/ChangeMakerGroupEdition/Sunshine",
+  "https://github.com/Jaunty-Jackals/jaunty-jackals",
+  "https://github.com/Edwin10151/MachineLearning",
   "https://github.com/mhmzdev/Covid19-Tracker-App",
   "https://github.com/mhmzdev/Messenger-Chat-Head-Flutter-UI",
   "https://github.com/mhmzdev/flutter.dev-Flutter-Web-Clone",
@@ -156,18 +136,15 @@ final kProjectsLinks = [
 // Contact
 final kContactIcons = [
   Icons.home,
-  Icons.phone,
   Icons.mail,
 ];
 
 final kContactTitles = [
   "Location",
-  "Phone",
   "Email",
 ];
 
 final kContactDetails = [
-  "Attock, Pakistan",
-  "(+92) 346 0159889",
-  "hamza@mhmz.dev"
+  "Malaysia",
+  "edwinting10151@gmail.com"
 ];
