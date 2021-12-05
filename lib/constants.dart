@@ -86,7 +86,7 @@ final kServicesLinks = [
 final kProjectsBanner = [
   "assets/projects/Change_Maker.png",
   "assets/projects/laptop.png",
-  "assets/projects/brain.png",
+  "assets/projects/brain2.png",
   "assets/projects/think.jpg",
 ];
 
